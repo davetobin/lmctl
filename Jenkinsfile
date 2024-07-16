@@ -1,10 +1,10 @@
 #!/usr/bin/env groovy
 
-String tarquinBranch = "develop"
+String tarquinBranch = "CPNA-1794"
 
 library "tarquin@$tarquinBranch"
 
-pipelinePy {
+pipelineLmctl {
   pkgInfoPath = 'lmctl/pkg_info.json'
   applicationName = 'lmctl'
   attachDocsToRelease = true
